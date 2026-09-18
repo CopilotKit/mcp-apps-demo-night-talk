@@ -1,0 +1,11 @@
+node_modules/
+.next/
+dist/
+.mcp-use/
+.vite/
+.env*
+!.env.example
+*.tsbuildinfo
+test-results/
+playwright-report/
+.DS_Store

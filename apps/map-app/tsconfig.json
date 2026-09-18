@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["index.ts", "mcp-env.d.ts", "views/**/*", ".mcp-use/**/*.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}
