@@ -1,0 +1,20 @@
+{
+  "name": "mcp-apps-demo-night",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n web,map -c blue,green \"npm run dev -w @fizzy/web\" \"npm run dev -w @fizzy/map-app\"",
+    "build": "npm run build --workspaces",
+    "start": "concurrently -k -n web,map -c blue,green \"npm run start -w @fizzy/web\" \"npm run start -w @fizzy/map-app\"",
+    "typecheck": "npm run typecheck --workspaces",
+    "test:e2e": "npm run test:e2e -w @fizzy/web"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
